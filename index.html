@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANIMAX CLASH</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>ANIMAX CLASH</h1>
+        <p class="subtitle">Duel animé tactique au tour par tour ⚔️</p>
+      </header>
+
+      <section class="arena">
+        <article class="fighter" id="player-card">
+          <h2 id="player-name">Hikari</h2>
+          <p>PV: <span id="player-hp">100</span></p>
+          <div class="hp-bar"><span id="player-bar"></span></div>
+        </article>
+
+        <article class="fighter enemy" id="enemy-card">
+          <h2 id="enemy-name">Kuro</h2>
+          <p>PV: <span id="enemy-hp">100</span></p>
+          <div class="hp-bar"><span id="enemy-bar"></span></div>
+        </article>
+      </section>
+
+      <section class="controls">
+        <button data-action="slash">Slash Éclair</button>
+        <button data-action="ki">Explosion Ki</button>
+        <button data-action="guard">Garde</button>
+        <button id="restart" class="secondary">Recommencer</button>
+      </section>
+
+      <section class="log" id="log" aria-live="polite"></section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
